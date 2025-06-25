@@ -1,0 +1,389 @@
+@font-face {
+  font-family: 'Terrorplate';
+  src: url('Fonts/Terrorplate.ttf') format('truetype');
+}
+
+
+/* BARRA DE NAV */
+
+.barra-navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 5px 30px; 
+    width: 100%;
+    box-sizing: border-box;  
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 160px;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 5px 0;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    font-family: 'Terrorplate', sans-serif;
+}
+
+.menu li a:hover {
+    color: #4e4c4c;
+}
+
+.logo {
+    height: 80px;  
+}
+
+/* SECCION DE INICIO */
+
+#inicio {
+    background-image: url(./imagenes/InicioRick.jpg); 
+    background-position: center;    
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+}
+
+main {
+      min-height: 80vh;
+     padding: 10px 30px;
+     color: aliceblue;
+      max-width: 800px;    
+      
+}
+
+main h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    font-size: 64px; 
+    margin-bottom: 60px;
+}
+
+main p {
+    text-align: justify;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px; 
+    max-width: 850px; 
+    margin: 0  
+}
+
+.trailer {
+    margin: 110px;
+    float: left;
+    margin-top: -280px; 
+    border-radius: 20px; 
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.trailer:hover {
+    transform: scale(1.35); 
+    
+}
+
+
+/* SECCION DE INFO */
+
+#acercaDe {
+    background-image: url(./imagenes/Alexandria.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+#acercaDe main h1 {
+    color: white; 
+    font-size: 95px; 
+    margin-left: 80px; 
+    margin-top: 50px; 
+}
+
+#acercaDe main p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    margin-left: 50px; 
+    padding: 20px;
+    color: white;  
+}
+
+.contenido-principal-acerca {
+    display: flex; 
+    justify-content: space-between; 
+    padding: 20px;     
+}
+
+.info-columnas {
+    display: flex; 
+    flex-direction: column; 
+    gap: 30px; 
+    margin-right: 50px; 
+    margin-top: 80px;     
+}
+
+.info-cuadro,
+.info-cuadro2 {
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: white;
+    padding: 25px; 
+    width: 350px; 
+    border-radius: 8px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left; 
+}
+
+
+.info-cuadro h2, .info-cuadro h3,
+.info-cuadro2 h2, .info-cuadro2 h3 {
+    color: #e0e0e0; 
+    margin-bottom: 10px;
+}
+
+.info-cuadro p,
+.info-cuadro2 p {
+    font-size: 18px; 
+    line-height: 1.6;
+}
+
+
+
+/* SECCION DE EPISODIOS */
+
+
+#episodiosimagen {
+    background-image: url(./imagenes/Negan.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+}
+
+.info-general {
+    padding: 10px;
+    border-radius: 12px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.info-general h1 {
+    font-size: 70px;
+    margin-bottom: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.info-general p {
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.episodios-favoritos {
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.lista-episodios {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.lista-episodios li {
+    margin: 10px;
+    text-align: center;
+    width: 210px; 
+}
+
+.lista-episodios img {
+    width: 100%; 
+    border-radius: 8px;
+}
+
+.lista-episodios p {
+    font-size: 19px;
+    margin-top: 8px;
+}
+
+/* SECCION DE ELENCO */
+
+
+#elencoimagen {
+    background-image: url(./imagenes/Personajes.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px;
+    padding: 0px;
+}
+
+.elenco {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.elenco h1 {
+    font-size: 64px;
+    margin-bottom: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.elenco-personajes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.personaje {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    width: 250px;
+    padding: 15px;
+    text-align: center;
+}
+
+.personaje img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.personaje p {
+    font-size: 20px;
+    margin-top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.secundarios {
+    font-size: 22px;
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 20px;  
+    border-radius: 8px;  
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+
+/* Seccion de contacto */
+
+#contactoimagen{
+    background-image: url(./imagenes/Daryl.jpg);
+    background-position: center;  
+    margin: 0px;
+    padding: 0px;
+}
+.comentarios-recursos h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-size: 3em; 
+    color: #e0e0e0; 
+    margin-bottom: 25px;  
+    padding-bottom: 10px; 
+     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
+   
+}
+
+.formulario-contacto {
+    display: flex;
+    flex-direction: column; 
+    gap: 15px; 
+    padding: 20px;
+    margin-top: 20px; 
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    max-width: 1000px; 
+    margin-left: auto; 
+    margin-right: auto;   
+}
+
+.campo-formulario label {
+    display: block; 
+    margin-bottom: 10px; 
+    color: #e0e0e0; 
+}
+
+.campo-formulario input[type="text"],
+.campo-formulario input[type="email"],
+.campo-formulario textarea {
+    width: calc(100% - 20px); 
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: #333;
+    color: white;
+    font-size: 18px; 
+    box-sizing: border-box; 
+}
+
+.boton-enviar {
+    background-color: #4CAF50; 
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 10px; 
+    align-self: center; 
+}
+
+.boton-enviar:hover {
+    background-color: #45a049; 
+    transform: translateY(-2px); 
+}
+
+#confirmacion-pagina{
+    background-image: url(./imagenes/the-walking-dead-glenn-with-walkers-4bqxor143hlc8s6h.webp);
+     background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
